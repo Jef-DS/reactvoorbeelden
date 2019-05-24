@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Development versie van de react-libraries -->
     <script src="http://unpkg.com/react/umd/react.development.js"></script>
+    <!-- vanaf v0.14 afgesplitst van React (begin van react-native)-->
     <script src="http://unpkg.com/react-dom/umd/react-dom.development.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="content"></div>
     <script>
+        
+        // nieuw React element "a" met een "href"-attribuut en als child de tekst
+        // 'Allemaal naar Cevora'
         var linkElement = React.createElement("a", {href: 'http://www.cevora.be'}, 'Allemaal naar Cevora');
+
+        // zet het linkElement in het HTML-element met als id "content"
         ReactDOM.render(
             linkElement,
             document.getElementById("content")

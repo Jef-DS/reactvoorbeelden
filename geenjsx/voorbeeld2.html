@@ -11,6 +11,10 @@
 <body>
     <div id="content"></div>
     <script>
+        // declareer een react component die een ul-element bevat 
+        // met drie (willekeurige) li-childelementen
+        // children moeten een unieke key hebben zodat React weet welke
+        // elementen in een lijst aangepast moeten worden.
         class K3 extends React.Component {
             render() {
                 let namen = ["Karen", "Kristel", "Kathleen"];
@@ -23,7 +27,7 @@
             }
         }
         ReactDOM.render(
-            React.createElement(K3),
+            React.createElement(K3), // react element (immutable)
             document.getElementById("content")
         );
     </script>
