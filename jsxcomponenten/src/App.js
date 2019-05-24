@@ -14,12 +14,15 @@ function MijnLink(props) {
   // en bewaar de andere properties in a_props
   // dit wordt beschouwd als een antipattern omdat we niet weten
   // welke properties aanwezig zijn in 'props'
-  
+
   /* const {tekst, ...a_props} = {...props};
    * return ( 
    * <a {...a_props}>{tekst}</a>
    *)
    */
+
+  // Hier weten we exact wat we aan het doen zijn. 
+  // (maar de toetsen van je computer en je vingertoppen verslijten meer)
   const {tekst, href, target} = {...props};
   return (
     <a href={href} target={target}>{tekst}</a>
