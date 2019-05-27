@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import TellerButtonContainer from './vb6';
+import TellerButton2Container from './vb7';
 
 function App() {
   return (
-    <TellerButtonContainer/> //Zie vb6.js
+    <TellerButton2Container/> //Zie vb7.js
   );
 }
 
