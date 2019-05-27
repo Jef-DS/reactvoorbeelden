@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Klok } from './vb3';
+import KlokStateful from './vb4';
 
 function App() {
   const items = [
@@ -12,7 +13,8 @@ function App() {
     <React.Fragment>
       <MijnLink href="http://www.cevora.be" target="_blank" tekst="Naar Cevora"/>
       <MijnList items={items}/>
-      <Klok/> // zie vb3.jsx
+      <Klok/> {/* zie vb3.jsx  */}
+      <KlokStateful /> {/*zie vb4.jsx*/}
     </React.Fragment>
   );
 }
