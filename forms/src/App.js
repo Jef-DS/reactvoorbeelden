@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 import './App.css';
-import PersoonContainer from './vb9';
+import PersoonContainer2 from './vb10';
 
 function App() {
   return (
-    <PersoonContainer/> //Zie vb9.js
+    <PersoonContainer2 /> // zie vb10.js
   );
 }
 class TekstVeld extends Component {
